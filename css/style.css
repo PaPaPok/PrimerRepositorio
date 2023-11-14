@@ -1,0 +1,252 @@
+/*
+    Autor: Francisco Daniel Montañez Franco
+    Fecha: 11/11/2023
+    Descripcion: El documento CSS principal 
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+body{
+    background-image: url("../img/fondo.png");
+    background-attachment: fixed;
+}
+#global{
+    width: 75%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px white;
+}
+#logo{
+    font-family: system-ui;
+    letter-spacing: 2px;
+    line-height: 40px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    float: left;
+    margin-bottom: 20px;
+}
+#menu{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #797979;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#menu ul{
+    line-height: 45px;
+    list-style: none;
+}
+#menu ul li{
+    height: 45px;
+    display: inline-block;
+    transition: all 600ms;
+}
+#menu ul li:hover{
+    background-color: #333;
+}
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#posts{
+    width: 60%;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+.post{
+    padding: 7px;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #333;
+}
+.post .date{
+    display: block;
+    color: #797979;
+    margin-top: 5px;
+}
+.post p{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    text-align: justify;
+}
+.button-more{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #797979;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 60px;
+    height: 10px;
+    border-radius: 40px;
+}
+#sidebar{
+    font-family: 'Times New Roman', Times, serif;
+    width: 35%;
+    float: right;
+}
+#sidebar div .titulopeque{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+#sidebar div .titulopeque h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #797979;
+    background: url("../img/lineas.png") repeat-x;
+}
+#sidebar div .titulopeque h4 span{
+    background: #333;
+    color: white;
+    padding: 5px;
+}
+#sidebar div img{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+#sidebar div p{
+    text-align: justify;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="name"],
+form input[type="number"]{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px black;
+    margin-top: 5px; 
+}
+form input[type="submit"]{
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    transition: all 300ms;
+}
+form input[type="submit"]:hover{
+    background-color: #333;
+    color: white;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 75%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+.bx-wrapper, .bx-viewport{
+    display: block;
+    height: 300px !important;
+    margin: auto;
+}
+#selectorTheme{
+    position: fixed;
+    top: 40%;
+    background: rgba(255, 255, 255, 0.5);
+    width: 40px;
+    height: 115px;
+}
+#nigth, 
+#red, 
+#blue{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#blue{
+    background: #00156d;
+} 
+#red{
+    background: #880303;
+}
+#nigth{
+    background: #6b1769;
+} 
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+#acordeon{
+    margin-top: 20px;
+}
+#reloj{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    border: 5px dashed #333;
+    width: 40%;
+    padding: 20px;
+    margin: 0px auto;
+    text-align: center;
+}
+#form-contact{
+    width: 50%;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#form-contact label{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+}
+#form-contact label{
+    width: 100%;
+}
+.error{
+    color: red;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+

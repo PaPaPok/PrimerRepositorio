@@ -1,0 +1,92 @@
+<!--
+    Autor: Francisco Daniel Montañez Franco
+    Fecha: 12/11/2023
+    Descripcion: Un simple documento de prueba HTML donde se utilizan JavaScript; a su vez se utilizó 
+    jQuery para hacer uso de los plugins jQueryUI y Validation 
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Mi primer Proyecto con Javascript</title>
+        <!--Estilos CSS-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link id="theme" rel="stylesheet" type="text/css" href="css/style.css"/>
+        
+        <!--JQuery
+        <script type="text/javascript" src="js/jquery.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!--MomentJS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" ></script>
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es-mx.min.js" 
+            integrity="sha512-xDkjENZG+aLSnyKKVe8hFVXGnxSUXZmTHifRsaaGhRhFpEhLJTksMuqB/9zQHJ3xYwG0JAhFi0a6eG41n1I6/Q==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer">
+        </script>
+
+        <!--JavaScript-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="selectorTheme">
+            <div id="nigth"></div>
+            <div id="red"></div>
+            <div id="blue"></div>
+        </div>
+        <section id="global">
+            <!--Cabecera-->
+            <header>
+                <h1 id="logo">
+                    PROYECTO JS
+                </h1>
+                <div class="clearfix"></div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reloj.html">Reloj</a></li>
+                        <li><a href="about.html">Sobre mi</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--Contenido-->
+            <secction id="content">
+                <!--Cargar reloj-->
+                <div id="box">
+                    <div id="reloj"></div>
+                </div>
+                <aside id="sidebar">
+                    <div id="about">
+                        <div class="titulopeque"><h4><span>Prueba</span></h4></div>
+                        <img src="img/imagen.jpg"/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non gravida ex, vel laoreet enim. 
+                        Maecenas at tincidunt orci. Suspendisse potenti. Sed arcu dui, auctor egestas ante et, interdum convallis erat.</p>
+                    </div>
+
+                    <div id="login">
+                        <di class="titulopeque"><h4><span>Identificate</span></h4></di>
+                        <form>
+                            <label for="name">-Nombre</label><br>
+                            <input type="text" name="nombre" id="name"/><br>
+
+                            <label for="email">-Email</label><br>
+                            <input type="email" name="email" id="email"/><br>
+
+                            <label for="password">-Contraseña</label><br>
+                            <input type="password" name="password" id="password"/><br>
+
+                            <input type="submit" value="Entrar"/>
+                        </form>
+                    </div>
+                </aside>
+                <div class="clearfix"></div>
+            </secction>
+        </section>
+        <footer>
+            Mi primera vez &copy;
+            <a href="#" class="subir">Ir arriba</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+/*
+    Autor: Francisco Daniel Montañez Franco
+    Fecha: 12/11/2023
+    Descripcion: Un documento CSS que simplemente cambia la vista en pocos aspectos
+*/
+body{
+    background-image: url("../img/fondo3.jpg");
+}
+#logo{
+    background-color: #6b1769;
+}
+#menu{
+    background-color: #880303;
+}
+#menu ul li:hover{
+    background-color: #6b1769;
+}
+.button-more{
+    background: #880303;
+}
